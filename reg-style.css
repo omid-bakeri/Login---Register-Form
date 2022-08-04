@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'byekan';
+    src: url('fonts/BYekan/BYekan+.ttf');
+    src: url('fonts/BYekan/BYekan+\ Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'btitr';
+    src: url('fonts/B-Titr/B\ Titr\ Bold_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    --color-primary: #009579;
+    --color-primary-dark: #034a3d;
+    --color-secendary: #08208b;
+    --color-error: #cc4444;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    /* background-image: url('images/KycE8k.png'); */
+    background-color: #183968;
+    background-size: cover;
+    image-resolution: 20%;
+    font-family: 'byekan';
+}
+
+.container {
+    width: 380px;
+    height: 500px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.formTitle {
+    text-align: center;
+    padding: 10px 0 20px 0;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'btitr';
+    box-sizing: border-box;
+    box-shadow: #183968;
+}
+
+.formInputGroup {
+    color: rgb(106, 106, 106);
+    font-size: 16px;
+    font-family: 'byekan';
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 20px 45px 0 10px;
+    margin: 0 auto;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.formInput {
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(195 195 195);
+    color: #a5a2a2;
+    background-color: rgb(216 220 237 / 61%);
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: 400;
+    font-family: 'byekan';
+}
+
+.formInput:hover {
+    font-weight: 600;
+}
+
+.formInput:focus {
+    border-color: rgb(1, 105, 175);
+    background-color: aliceblue;
+    color: rgb(10, 0, 0);
+    font-weight: 400;
+}
+
+.formButton {
+    width: 300px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #009579;
+    border-radius: 5px;
+    border-color: rgb(195, 195, 195);
+    max-width: 300px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'byekan';
+    font-display: inherit;
+    margin: 40px 45px;
+    box-sizing: border-box;
+    box-shadow: 3px rgb(107, 106, 106);
+}
+
+.formButton:hover {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center center;
+    text-shadow: #ffffff;
+}
+
+.formTextPassForget {
+    text-align: center;
+    margin: -20px 0 0 0;
+    padding: 10px;
+}
+
+.formTextPassForgetLink:hover {
+    color: rgb(198, 137, 6);
+}
+
+.formTextCreateAccount {
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 2px;
+}
+
+#linkCreateAccount:hover {
+    color: rgb(198, 137, 6);
+}
+
+#nlnameError {
+    color: #cc4444;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'byekan';
+    box-sizing: border-box;
+    box-shadow: #183968;
+    padding: 5px 4px 0 0;
+    display: none;
+}
+
+#usernameError {
+    color: #cc4444;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'byekan';
+    box-sizing: border-box;
+    box-shadow: #183968;
+    padding: 5px 4px 0 0;
+    display: none;
+}
+
+#emailError {
+    color: #cc4444;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'byekan';
+    box-sizing: border-box;
+    box-shadow: #183968;
+    padding: 5px 4px 0 0;
+    display: none;
+}
+
+#passwordError {
+    color: #cc4444;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'byekan';
+    box-sizing: border-box;
+    box-shadow: #183968;
+    padding: 5px 4px 0 0;
+    display: none;
+}
+
+.formButton:active {
+    transform: scale(0.98);
+}
+
+#loginLink {
+    font-size: 17px;
+}
+
+#loginLink:hover {
+    color: rgb(217, 142, 3);
+}

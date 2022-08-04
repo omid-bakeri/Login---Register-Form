@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=fa dir="rtl">
+
+<head lang="fa">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg-style.css" type="text/css">
+    <title>ثبت نام</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" action="homeReg.html" id="register" method="post" onsubmit="return formValidationFunction()">
+            <h1 class="formTitle ">ثبت نام در سایت</h1>
+
+            <div class="formInputGroup ">
+                <input id="nameLastName" style="font-family: 'byekan'; " type="text " class="formInput " autofocus placeholder="نام و نام خانوادگی " autocomplete=" ">
+                <!-- <div class="formInputErrorMessage ">این یک پیغام خطا است</div> -->
+                <div class="nlnameError" id="nlnameError">پر کردن این فیلد الزامی است</div>
+            </div>
+
+            <div class="formInputGroup ">
+                <input id="userName" type="text " autofocus placeholder="نام کاربری " autocomplete=" " class="formInput ">
+                <div class="usernameError" id="usernameError">پر کردن این فیلد الزامی است</div>
+            </div>
+
+            <div class="formInputGroup ">
+                <input id="email" type="email" id="email " autofocus placeholder="پست الکترونیکی " autocomplete=" " class="formInput ">
+                <div class="emailError" id="emailError"> پست الکترونیکی نامعتبر است</div>
+            </div>
+
+            <div class="formInputGroup ">
+                <input id="password" type="password "  autofocus placeholder="رمز عبور " autocomplete=" " class="formInput ">
+                <div class="passwordError" id="passwordError">رمز عبور باید بیش از 8 کاراکتر باشد</div>
+            </div>
+
+            <button class="formButton " id="registerButton " type="submit ">ثبت نام</button>
+
+        </form>
+    </div>
+    <script src="reg-main.js" type="text/javascript ">
+    </script>
+</body>
+
+</html>

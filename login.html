@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang=fa dir="rtl">
+
+<head lang="fa">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log-style.css" type="text/css">
+    <title>صفحه ورود / ثبت نام</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" id="login" action="home.html" method="post" name="form" onsubmit="return controlFunction()">
+            <h1 class="formTitle">ورود به سایت</h1>
+
+            <div class="formInputGroup">
+                <input style="font-family:'byekan';" autocomplete="off" name="usernameoremail" id="usernameoremail" type="text" class="formInput" autofocus placeholder="نام کاربری یا آدرس ایمیل">
+                <!-- <div class="formInputErrorMessage">این یک پیغام خطا است</div> -->
+                <div id="formMessageError">پر کردن این فیلد الزامی است</div>
+            </div>
+
+            <div class="formInputGroup">
+                <input type="password" id="password" name="password" autofocus placeholder="رمز عبور" autocomplete="" class="formInput">
+                <div id="formInputErrorPasswordMessage">رمز عبور باید حداقل 8 کاراکتر داشته باشد</div>
+            </div>
+            <div>
+
+            </div>
+            <button class="formButton" id="loginbutton" type="submit ">ورود</button>
+            <p class="formTextPassForget ">
+                <a href="ForgetPAsswordPage.html" class="formTextPassForgetLink ">رمز عبور خود را فراموش کرده اید؟</a>
+            </p>
+
+            <p class="formTextCreateAccount ">
+                <a href="#" class="formTextPassForgetLink "><a>حساب کاربری ندارید؟</a> <a href="register.html" id="createAccountLink">ساخت حساب کاربری</a>
+            </p>
+        </form>
+    </div>
+    <script src="log-main.js" type="text/javascript">
+    </script>
+</body>
+
+</html>
